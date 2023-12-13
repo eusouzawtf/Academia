@@ -1,0 +1,31 @@
+POST http://localhost:3333/musculacao
+Content-Type: application/json
+
+{
+    "exercicio": "Supino",
+    "series": 4,
+    "repeticoes": 10
+}
+
+###
+
+GET http://localhost:3333/musculacao
+
+###
+
+GET http://localhost:3333/musculacao?search=Supino
+
+###
+
+PUT http://localhost:3333/musculacao/6044ec6f-31e0-4b21-b3fc-95bcb16fd316
+Content-Type: application/json
+
+{
+    "exercicio": "Agachamento",
+    "series": 3,
+    "repeticoes": 8
+}
+
+###
+
+DELETE http://localhost:3333/musculacao/cf8b4409-95f7-4815-bfe4-0a51a4e1f265
